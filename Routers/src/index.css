@@ -1,0 +1,52 @@
+ .navbar {
+     /* background-image: radial-gradient(circle 1093px at -13.5% -13.6%, rgba(254, 192, 193, 1) 6.2%, rgba(0, 67, 105, 1) 98.8%); */
+     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+ }
+
+ #sidebar {
+     background: #4b6cb7;
+     /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, #182848, #4b6cb7);
+     /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #182848, #4b6cb7);
+     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     width: 250px;
+     min-height: 100vh;
+ }
+
+ #contentBody {
+     width: 80%;
+     min-height: 700px;
+     padding: 50px;
+     border-radius: 5px;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+     position: absolute;
+     top: 100px;
+     left: 275px;
+ }
+
+ .sidebar-menus {
+     min-height: 100vh;
+     padding: 30px 0px;
+
+ }
+
+ .list-menu {
+     list-style-type: none;
+ }
+
+ .list-tems {
+     margin-bottom: 10px;
+ }
+
+ .list-tems .list-item-content {
+     text-decoration: none;
+     font-size: 18px;
+     color: white;
+
+ }
+
+ .list-tems .list-item-content i {
+     margin-right: 15px;
+ }
