@@ -1,0 +1,20 @@
+[
+    {
+        "courseName": "Python Course",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente sed placeat sint. Corporis quas quae, eveniet quisquam itaque perferendis beatae veritatis quod. Qui dicta odit commodi quasi, numquam provident quisquam.",
+        "img": "unnamed.png",
+        "price": "$300",
+        "from": "APR. 05",
+        "to": "JUL. 16",
+        "time": "17.00 - 20.00"
+    },
+    {
+        "courseName": "FullStack Developer Course",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente sed placeat sint. Corporis quas quae, eveniet quisquam itaque perferendis beatae veritatis quod. Qui dicta odit commodi quasi, numquam provident quisquam.",
+        "img": "unnamed.png",
+        "price": "$500",
+        "from": "APR. 05",
+        "to": "JUL. 16",
+        "time": "17.00 - 20.00"
+    }
+]

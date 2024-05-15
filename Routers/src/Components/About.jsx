@@ -1,11 +1,18 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function About() {
 
     return (
         <>
-            <div className="row" id="contentBody">
-                <div className="col">
+            <div className="row">
+                <div className="col p-5">
+                    <nav aria-label="breadcrumb">
+                        <ol className="breadcrumb">
+                            <li className="breadcrumb-item"><Link to={'/'}>Home</Link></li>
+                            <li className="breadcrumb-item active" aria-current="page">About</li>
+                        </ol>
+                    </nav>
                     <h3>About</h3>
                     <div className="card" style={{ width: "18rem" }}>
                         <div className="card-body">

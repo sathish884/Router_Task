@@ -1,6 +1,7 @@
 import { BrowserRouter } from "react-router-dom"
-import { Navbar } from "./Navbar"
+import { Navbar } from "./Components/Navbar"
 import Routers from "./Routers/Routers"
+import Courses from "./Components/Courses"
 
 
 function App() {
@@ -11,7 +12,6 @@ function App() {
         <Navbar />
         <Routers />
       </BrowserRouter>
-
     </>
   )
 }

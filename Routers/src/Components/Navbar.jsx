@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Sidebar from './Components/Sidebar'
+import Sidebar from './Sidebar'
 
 export const Navbar = () => {
     return (
@@ -12,28 +12,16 @@ export const Navbar = () => {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
-                        {/* <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li className="nav-item">
-                                <Link className="nav-link active" aria-current="page">Home</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link">About</Link>
-                            </li>
-
-                            <li className="nav-item">
-                                <Link className="nav-link">Contact</Link>
-                            </li>
-                        </ul> */}
                         <form className="d-flex" role="search">
                             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                            <button type="button" class="btn btn-outline-warning">Search</button>
+                            <button type="button" className="btn btn-outline-warning">Search</button>
                         </form>
                     </div>
                 </div>
             </nav>
-            <div id="sidebar">
+            {/* <div id="sidebar">
                 <Sidebar />
-            </div>
+            </div> */}
 
 
         </>
