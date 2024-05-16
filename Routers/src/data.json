@@ -1,20 +1,85 @@
-[
-    {
-        "courseName": "Python Course",
-        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente sed placeat sint. Corporis quas quae, eveniet quisquam itaque perferendis beatae veritatis quod. Qui dicta odit commodi quasi, numquam provident quisquam.",
-        "img": "unnamed.png",
-        "price": "$300",
-        "from": "APR. 05",
-        "to": "JUL. 16",
-        "time": "17.00 - 20.00"
-    },
-    {
-        "courseName": "FullStack Developer Course",
-        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente sed placeat sint. Corporis quas quae, eveniet quisquam itaque perferendis beatae veritatis quod. Qui dicta odit commodi quasi, numquam provident quisquam.",
-        "img": "unnamed.png",
-        "price": "$500",
-        "from": "APR. 05",
-        "to": "JUL. 16",
-        "time": "17.00 - 20.00"
-    }
-]
+{
+    "courseData": [
+        {
+            "id": "1",
+            "courseName": "Backend Course",
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente sed placeat sint. Corporis quas quae, eveniet quisquam itaque perferendis beatae veritatis quod. Qui dicta odit commodi quasi, numquam provident quisquam.",
+            "img": "images6.avif",
+            "price": "$300",
+            "from": "MAR. 15",
+            "to": "MAY. 20",
+            "time": "17.00 PM - 20.00 PM",
+            "day": "Staturday and Sunday"
+        },
+        {
+            "id": "2",
+            "courseName": "FullStack Developer Course",
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente sed placeat sint. Corporis quas quae, eveniet quisquam itaque perferendis beatae veritatis quod. Qui dicta odit commodi quasi, numquam provident quisquam.",
+            "img": "images7.avif",
+            "price": "$500",
+            "from": "APR. 05",
+            "to": "SEP. 11",
+            "time": "3.00 PM - 06.00 PM",
+            "day": "Wednesday and Friday"
+        },
+        {
+            "id": "3",
+            "courseName": "Frontend Course",
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente sed placeat sint. Corporis quas quae, eveniet quisquam itaque perferendis beatae veritatis quod. Qui dicta odit commodi quasi, numquam provident quisquam.",
+            "img": "images5.jpg",
+            "price": "$250.00",
+            "from": "MAY. 05",
+            "to": "AUG. 21",
+            "time": "10.00 AM - 13.00 PM",
+            "day": "Mondays and Thursdays"
+        }
+    ],
+    "aboutCourseData": [
+        {
+            "id": "1",
+            "courseName": "Backend Course",
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente sed placeat sint. Corporis quas quae, eveniet quisquam itaque perferendis beatae veritatis quod. Qui dicta odit commodi quasi, numquam provident quisquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente sed placeat sint. Corporis quas quae, eveniet quisquam itaque perferendis beatae veritatis quod. Qui dicta odit commodi quasi, numquam provident quisquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente sed placeat sint. Corporis quas quae, eveniet quisquam itaque perferendis beatae veritatis quod. Qui dicta odit commodi quasi, numquam provident quisquam.",
+            "img": "images1.jpg",
+            "fromDate": "MAR. 15",
+            "toDate": "MAY. 20",
+            "duration": "2 months",
+            "coverCourses": [
+                "Python",
+                "MongoDB"
+            ]
+        },
+        {
+            "id": "2",
+            "courseName": "FullStack Developer Course",
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente sed placeat sint. Corporis quas quae, eveniet quisquam itaque perferendis beatae veritatis quod. Qui dicta odit commodi quasi, numquam provident quisquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente sed placeat sint. Corporis quas quae, eveniet quisquam itaque perferendis beatae veritatis quod. Qui dicta odit commodi quasi, numquam provident quisquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente sed placeat sint. Corporis quas quae, eveniet quisquam itaque perferendis beatae veritatis quod. Qui dicta odit commodi quasi, numquam provident quisquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente sed placeat sint. Corporis quas quae, eveniet quisquam itaque perferendis beatae veritatis quod. Qui dicta odit commodi quasi, numquam provident quisquam.",
+            "img": "images2.jpg",
+            "fromDate": "APR. 05",
+            "toDate": "SEP. 11",
+            "duration": "5 months",
+            "coverCourses": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Bootstrap",
+                "React",
+                "NodeJS"
+            ]
+        },
+        {
+            "id": "3",
+            "courseName": "Frontend Course",
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente sed placeat sint.  eveniet quisquam itaque perferendis beatae veritatis quod. Qui dicta odit commodi quasi, numquam provident quisquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente sed placeat sint. Corporis quas quae, Sapiente sed placeat sint. Corporis quas quae, eveniet quisquam itaque perferendis beatae veritatis quod. Qui dicta odit commodi quasi, numquam provident quisquam. Sapiente sed placeat sint. Corporis quas quae, eveniet quisquam itaque perferendis beatae veritatis quod. Qui dicta odit commodi quasi, numquam provident quisquam.",
+            "img": "images4.webp",
+            "fromDate": "MAY. 05",
+            "toDate": "AUG. 21",
+            "duration": "3 months",
+            "coverCourses": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Bootstrap",
+                "Angular"
+            ]
+        }
+    ]
+}

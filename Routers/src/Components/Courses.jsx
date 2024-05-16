@@ -1,28 +1,40 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
-import { data } from './../data.json'
+import data from '../data.json';
+import './Course.css';
 
 function Courses() {
 
     const navigate = useNavigate();
 
-    const handleRouterNavigate = () => {
-        navigate('/about')
+    const [courseData, setCourseData] = useState(data.courseData)
+
+    const handleRouterNavigate = (id) => {
+        // console.log("ggggg", getId);
+        // Navigate to the '/about' route and pass 'getId' as data using state in the location object
+        navigate('/about', { state: { data: id } });
+    }
+
+    const registerationCourse = () => {
+        navigate('/registeration')
     }
 
     return (
         <>
-            <div className="container-fluid" id="contentBody">
 
-                <div className="row header-content">
+
+
+            <main>
+                <div className="row" style={{ backgroundColor: "rgb(49, 46, 46)", width: "100%" }}>
                     <div className="col p-5">
                         <h2 className='text-center text-white'>Course Details</h2>
+                        <p className='text-white text-center'>If your course offering will be publicized through an online course management platform with a catalog or brochure.</p>
                     </div>
                 </div>
 
                 <div className="row card-row">
-                    {data.map((item, index) => (
-                        <div className="col-12 p-5" key={index}>
+                    {courseData.map((item, index) => (
+                        <div className="col-12 p-5" key={item.id}>
                             <div className="card">
                                 <div className="card-body d-flex">
                                     <div className=''>
@@ -31,11 +43,11 @@ function Courses() {
                                     <div className='d-flex'>
                                         <div className='p-3' style={{ width: "70%" }}>
                                             <p>Classroom based teaching</p>
-                                            <h4 className='pb-3'><Link to={'/about'} style={{ color: "red" }}>{item.courseName}</Link></h4>
+                                            <h4 className='pb-3'><a className='course-title' onClick={() => handleRouterNavigate(item.id)}>{item.courseName}</a></h4>
                                             <p className='descriptions'>{item.description}</p>
-                                            <p>on <b>Mondays</b> and <b>Thursdays</b></p>
-                                            <button type='button' className='btn btn-danger'>Sign up</button>
-                                            <button type='button' className='btn btn-outline-danger ms-3' onClick={handleRouterNavigate}>Read More</button>
+                                            <p>on <b>{item.day}</b></p>
+                                            <button type='button' className='btn btn-danger' onClick={registerationCourse}>Apply</button>
+                                            <button type='button' className='btn btn-outline-danger ms-3' onClick={() => handleRouterNavigate(item.id)}>Read More</button>
                                         </div>
                                         <div className='mt-5 p-3' style={{ width: "30%", textAlign: "right" }}>
                                             <h4>{item.price}</h4>
@@ -51,10 +63,8 @@ function Courses() {
                         </div>
                     ))
                     }
-
                 </div>
-            </div>
-
+            </main>
         </>
     )
 }

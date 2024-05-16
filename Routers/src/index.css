@@ -1,85 +1,35 @@
  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+ #root {
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+
+ }
+
  .navbar {
-     /* background-image: radial-gradient(circle 1093px at -13.5% -13.6%, rgba(254, 192, 193, 1) 6.2%, rgba(0, 67, 105, 1) 98.8%); */
+     position: sticky;
+     top: 0;
+ }
+
+ .navbar-brand {
+     padding: 0px !important;
+ }
+
+ .navbar-brand img {
+     width: 250px;
+     height: 50%;
+ }
+
+ .container-fluid {
+     padding: 0px !important;
+ }
+
+ body {
+     background-color: antiquewhite;
+     font-family: "Noto Sans", sans-serif;
+ }
+
+ .navbar {
      box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
  }
-
- /* #sidebar {
-     background: #4b6cb7;
-     background: -webkit-linear-gradient(to right, #182848, #4b6cb7);
-     background: linear-gradient(to right, #182848, #4b6cb7);
- 
-     width: 250px;
-     max-height: 100%;
- }
-
- #contentBody {
-     width: 80%;
-     min-height: 700px;
-     padding: 50px;
-     border-radius: 5px;
-     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-     position: absolute;
-     top: 100px;
-     left: 275px;
- }
-
- .sidebar-menus {
-     min-height: 100vh;
-     padding: 30px 0px;
-
- }
-
- .list-menu {
-     list-style-type: none;
- }
-
- .list-tems {
-     margin-bottom: 10px;
- }
-
- .list-tems .list-item-content {
-     text-decoration: none;
-     font-size: 18px;
-     color: white;
-
- }
-
- .list-tems .list-item-content i {
-     margin-right: 15px;
- } */
-
- .header-content {
-     height: 300px;
-     background-color: rgb(49, 46, 46);
- }
-
- .card-row {
-     font-family: "Noto Sans", sans-serif;
-     background-color: antiquewhite;
- }
-
- .calenders {
-     padding: 15px;
-     border: 1px solid rgb(219, 216, 216);
-     border-radius: 3px;
-     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
- }
-
- .card {
-     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
- }
-
- .card-img {
-     width: 100%;
-     height: 100%;
- }
-
- .descriptions {
-     font-size: 15px;
- }
-
- /* .calenders p {
-     text-align: right;
- } */
