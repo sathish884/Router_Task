@@ -8,6 +8,7 @@ const Routers = () => {
     return (
         <>
             <div className='container-fluid'>
+                {/* Routers - navigate to one components to another component  */}
                 <Routes>
                     <Route path='/' element={<Courses />}></Route>
                     <Route path='/about' element={<About />}></Route>

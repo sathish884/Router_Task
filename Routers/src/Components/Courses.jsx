@@ -5,16 +5,19 @@ import './Course.css';
 
 function Courses() {
 
+    // Initialize the useNavigate hook for navigation
     const navigate = useNavigate();
 
+    // Initialize courseData state with initial value from data.courseData
     const [courseData, setCourseData] = useState(data.courseData)
 
+    // Function to handle navigation to the '/about' route and pass id as data using state in the location object
     const handleRouterNavigate = (id) => {
         // console.log("ggggg", getId);
-        // Navigate to the '/about' route and pass 'getId' as data using state in the location object
         navigate('/about', { state: { data: id } });
     }
 
+    // Function to handle navigation to the '/registeration' route
     const registerationCourse = () => {
         navigate('/registeration')
     }
@@ -37,10 +40,10 @@ function Courses() {
                         <div className="col-12 p-5" key={item.id}>
                             <div className="card">
                                 <div className="card-body d-flex">
-                                    <div className=''>
+                                    <div className='card-img-container'>
                                         <img className='card-img' src={item.img} alt="" />
                                     </div>
-                                    <div className='d-flex'>
+                                    <div className='d-flex content-body'>
                                         <div className='p-3' style={{ width: "70%" }}>
                                             <p>Classroom based teaching</p>
                                             <h4 className='pb-3'><a className='course-title' onClick={() => handleRouterNavigate(item.id)}>{item.courseName}</a></h4>
@@ -49,7 +52,7 @@ function Courses() {
                                             <button type='button' className='btn btn-danger' onClick={registerationCourse}>Apply</button>
                                             <button type='button' className='btn btn-outline-danger ms-3' onClick={() => handleRouterNavigate(item.id)}>Read More</button>
                                         </div>
-                                        <div className='mt-5 p-3' style={{ width: "30%", textAlign: "right" }}>
+                                        <div className='mt-5 p-3 price-card'>
                                             <h4>{item.price}</h4>
                                             <div className='calenders'>
                                                 <p><b>{item.from} - {item.to}</b></p>

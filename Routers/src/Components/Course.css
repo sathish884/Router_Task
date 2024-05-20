@@ -17,7 +17,7 @@
 
 .card {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    /* z-index: -1; */
+    /* z-index: -50; */
 }
 
 .card-img {
@@ -27,4 +27,9 @@
 
 .descriptions {
     font-size: 15px;
+}
+
+.price-card {
+    width: 30%;
+    text-align: right;
 }

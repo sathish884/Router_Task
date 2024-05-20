@@ -7,6 +7,7 @@ function About() {
 
     const [aboutCourse, setAboutCourse] = useState(courseData.aboutCourseData)
 
+    // used to access the current location object, 
     const location = useLocation();
 
     // Access the data passed from the previous route
@@ -27,10 +28,10 @@ function About() {
                             </nav>
                             <h3 className='ps-5 pb-3' style={{ color: "red" }}>{item.courseName}</h3>
                             <div className="row">
-                                <div className="col-6 ps-5 about-img">
+                                <div className="col-sm-12 col-lg-6 ps-5 about-img">
                                     <img className='course-logo' src={item.img} alt="" />
                                 </div>
-                                <div className="col-6">
+                                <div className="col-sm-12 col-lg-6">
                                     <div className="body-content">
                                         <p>{item.description}</p>
                                         <p><b> Course Duration</b> : {item.duration}</p>

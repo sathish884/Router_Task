@@ -33,3 +33,66 @@
  .navbar {
      box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
  }
+
+ /* Extra small devices (phones, 600px and down) */
+ @media (max-width: 600px) {
+     .card-body {
+         display: flex;
+         flex-direction: column;
+     }
+
+     .content-body {
+         display: flex;
+         text-align: center;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .price-card {
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .body-content {
+         text-align: center;
+     }
+ }
+
+
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media (max-width: 768px) {
+
+     .card-body {
+         display: flex;
+         flex-direction: column;
+     }
+
+     .content-body {
+         display: flex;
+         text-align: center;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .price-card {
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .body-content {
+         text-align: center;
+         margin-top: 20px;
+     }
+
+     .course-details {
+         margin-bottom: 20px;
+     }
+ }
